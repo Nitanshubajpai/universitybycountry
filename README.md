@@ -1,6 +1,6 @@
 # universitybycountry
 
-##To run the app:
+## To run the app:
 -> make sure npm and angular is already installed.
 -> Open cmd in app.
 -> enter "ng serve".
