@@ -55,4 +55,7 @@ body {
   /* cards with stretch to 100% width by default, so set width or max-width to constrain the card's width */
 .card {
   margin-top: 100px;
+  width: max-content;
+  padding: 20px;
+  border: 1px solid black;
 }
