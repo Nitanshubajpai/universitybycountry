@@ -1,0 +1,20 @@
+<div class='box'>
+    <select [(ngModel)]='countryselected' (ngModelChange)='oncountryselected($event)'>
+        <option value="" disabled selected hidden>Please Choose the country.</option>
+        <option *ngFor ="let university of lstuniversity" [value]="university.country">{{university.country}}</option>
+    </select>
+</div>
+<br><br>
+<div *ngFor="let uni in lstunis">
+    <div class="container">
+        <div class="card">
+            <img src="http://via.placeholder.com/350x150" alt="" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">{{uni.name}}</h4>
+                <p class="card-text">{{uni.country}} || {{uni.alpha_two_code}}</p><br>
+                <p class="card-text">{{uni.country}}</p><br>
+                <p class="card-text">{{uni.webpages}}</p>
+            </div>
+        </div>
+    </div>
+</div>
