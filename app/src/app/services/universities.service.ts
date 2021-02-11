@@ -16,9 +16,9 @@ export class UniversitiesService {
       return this.httpclient.get("http://universities.hipolabs.com/search");
     }
 
-    getuniversitybycountry(countryselected: string): Observable<any>
+    getuniversitybycountry(countryselect: string): Observable<any>
     {
-      let params1 = new HttpParams().set('country',countryselected);
-      return this.httpclient.get("http://universities.hipolabs.com/search", {params: params1});
+      let params1 = new HttpParams().set('country', countryselect);
+      return this.httpclient.get("http://universities.hipolabs.com/search", {params:params1});
     } 
 }

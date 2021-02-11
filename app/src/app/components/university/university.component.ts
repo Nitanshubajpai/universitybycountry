@@ -28,8 +28,8 @@ export class UniversityComponent implements OnInit {
   )
 
 }
-  oncountryselected(countryselected: any): void{
-    this._UniversitiesService.getuniversitybycountry(countryselected)
+  oncountryselected(countryselect: any): void{
+    this._UniversitiesService.getuniversitybycountry(countryselect)
     .subscribe(
       data=>
       {
