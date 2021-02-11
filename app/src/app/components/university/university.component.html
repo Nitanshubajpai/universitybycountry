@@ -6,10 +6,9 @@
 </div>
 <br><br>
 
-<div >
-    <div class="container" *ngFor="let uni of lstunis">
+<div  *ngFor="let uni of lstunis">
+    <div class="container">
         <div class="card">
-            <img src="http://via.placeholder.com/350x150" alt="" class="card-img-top">
             <div class="card-body">
                 <h4 class="card-title">{{uni.name}}</h4>
                 <p class="card-text">{{uni.country}} || {{uni.alpha_two_code}}</p><br>
